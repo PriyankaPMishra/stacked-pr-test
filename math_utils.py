@@ -1,8 +1,15 @@
-def add(a, b):
-    """Return the sum of a and b."""
+def add(a, b, c=0):
+    """Return the sum of a, b, and c."""
+    #add func modified
+    #add third arg
+    print(f"Adding {a}, {b}, and {c}")
+    return a + b + c
+
+def sub(a, b):
+    """Return the difference of a and b."""
     #add a test comment here to test conflicts
     #add() in PR #1 already has 6 lines, so this should be a conflict
-    return a + b
+    return add(a, -b)
 
 def sub(a, b):
     """Return the difference of a and b."""
