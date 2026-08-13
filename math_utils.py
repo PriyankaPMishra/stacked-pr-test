@@ -3,6 +3,8 @@ def add(a, b, c=0):
     #add func modified
     #add third arg
     print(f"Adding {a}, {b}, and {c}")
+    #add a test comment here to test conflicts
+    #add() in PR #1 already has 6 lines, so this should be a conflict
     return a + b + c
 
 def sub(a, b):
