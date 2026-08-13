@@ -1,8 +1,9 @@
-def add(a, b):
-    """Return the sum of a and b."""
+def add(a, b, c=0):
+    """Return the sum of a, b, and c."""
     #add func modified
-    print(f"Adding {a} and {b}")
-    return a + b
+    #add third arg
+    print(f"Adding {a}, {b}, and {c}")
+    return a + b + c
 
 if __name__ == "__main__":
     result = add(3, 5)
