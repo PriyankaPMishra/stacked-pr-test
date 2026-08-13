@@ -1,5 +1,7 @@
 def add(a, b):
     """Return the sum of a and b."""
+    #add a test comment here to test conflicts
+    #add() in PR #1 already has 6 lines, so this should be a conflict
     return a + b
 
 def sub(a, b):
