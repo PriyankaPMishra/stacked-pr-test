@@ -5,6 +5,19 @@ def add(a, b, c=0):
     print(f"Adding {a}, {b}, and {c}")
     return a + b + c
 
+def sub(a, b):
+    """Return the difference of a and b."""
+    #add a test comment here to test conflicts
+    #add() in PR #1 already has 6 lines, so this should be a conflict
+    return add(a, -b)
+
+def sub(a, b):
+    """Return the difference of a and b."""
+    return add(a, -b)
+
 if __name__ == "__main__":
-    result = add(3, 5)
-    print(f"SUM: {result}")
+    result_add = add(3, 5)
+    print(f"SUM: {result_add}")
+ 
+    result_sub = sub(10, 4)
+    print(f"DIFFERENCE: {result_sub}")
